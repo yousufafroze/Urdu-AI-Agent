@@ -84,3 +84,11 @@ fly deploy
 - **No audio in reply** — check logs; model may have refused or session timed out
 - **ffmpeg not found** — install ffmpeg locally / in Docker image
 - **Voice sounds wrong** — try `GEMINI_VOICE=Kore` or `Puck` in `.env`
+
+## Workflow & Branching Policy
+
+This repository implements a strict branching strategy for both human developers and AI coding agents:
+- **No Direct Commits**: Direct commits to the `main` or `master` branches are blocked by a Git pre-commit hook.
+- **Separate Branches for Conversations/Tasks**: When beginning a new task or opening a new conversation with an AI agent, you must immediately create and checkout a separate branch (e.g. `feature/name` or `conversation/id`).
+- **Pull Requests (PR)**: Merging edits into `main` or `master` should only be done via PR once changes are verified and ready.
+

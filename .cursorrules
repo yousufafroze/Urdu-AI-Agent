@@ -1,0 +1,7 @@
+# Branching & Workflow Policy for AI Agents
+
+Whenever you start a new conversation or task in this repository:
+1. You MUST check out a separate feature or bugfix branch (e.g., `feature/<task-name>` or `conversation/<conversation-id>`).
+2. Do NOT make edits or commits directly to the `main` or `master` branches.
+3. The `main` or `master` branches should only be modified when ready for a Pull Request (PR).
+4. If you are currently on `main` or `master`, immediately checkout a new branch before modifying any codebase files.
